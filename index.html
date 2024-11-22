@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRKT.AI</title>
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mycolor : '#b075fd',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+     .gradient-color {
+            background: linear-gradient(to right, #cc7cf8, #a464fd, #915aff);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+      .bg-gradient{
+        background-image: linear-gradient(to right, #cc7cf8, #a464fd, #915aff);
+      }
+
+  </style>
+
+</head>
+
+<body class="">
+    <!-- Navbar start -->
+    <div class="flex px-4 md:px-10 py-6 justify-between items-center ">
+    <div class="flex gap-2 items-center ">
+        <img src="./assets/logo.png" alt="logo" class="w-7">
+        <span class="font-bold text-2xl">MRKT.AI</span>
+    </div>
+
+   
+    <div class="hidden md:flex gap-12 text-sm ">
+        <a href="./index.html" class="pb-2 border-b-2 border-mycolor text-[16px]">Home</a>
+        <a href="#discover" class="text-[16px]">Feature</a>
+        <a href="#pricing"  class="text-[16px]">Pricing</a>
+        <a href="#growth"  class="text-[16px]">Growth</a>
+    </div>
+
+
+  <!-- Modal start -->
+
+  <div class=" flex items-center justify-center ">
+
+  <!-- Hidden Checkbox -->
+  <input type="checkbox" id="modalToggle" class="hidden peer" />
+
+  <!-- Start Free Trial Button -->
+  <label for="modalToggle" class="px-5 py-3 tracking-wide rounded-full border border-mycolor cursor-pointer hover:bg-purple-400">
+    Start Free Trial
+  </label>
+
+  <!-- Modal -->
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden peer-checked:flex">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
+      <h2 class="text-xl font-bold text-gray-800">Start Your Free Trial</h2>
+      <p class="mt-2 text-gray-600">Sign up now to enjoy your free trial. No credit card required!</p>
+      <div class="mt-4 flex justify-end space-x-2">
+        <!-- Close Button -->
+        <label for="modalToggle" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg cursor-pointer hover:bg-gray-400">
+          Cancel
+        </label>
+        <button class="px-4 py-2 bg-gradient text-white rounded-lg hover:text-black">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+    <!-- modal end -->
+
+    <!-- Navbar end -->
+   
+    <!-- Hero-start -->
+    <div class="md:flex justify-center items-center flex-wrap">
+    <div class=" md:w-[46%] px-4 md:px-8">
+        <h1 class="text-[70px] md:text-[7vw] lg:text-[8vw] leading-[10vh] md:leading-[8vw] lg:leading-[16vh] font-bold my-4 md:my-6 lg:my-8  heading1"><span class="gradient-color">AI-Driven</span> marketing</h1>
+
+        <p class="text-lg font-light">Elevate your brand to new heights with our cutting-edge marketing strategies. We specialize in delivering tailored solutions that captivate your audience and amplify your online presence.</p>
+
+        <div class="flex gap-4 my-4">
+            <button class="py-3 px-5 text-white rounded-full bg-gradient cursor-pointer ">Get Started</button>
+            <button class="py-3 px-5  rounded-full border border-mycolor cursor-pointer flex items-center gap-1">
+                <i class="bi bi-play text-xxl"></i>
+                Watch a demo</button>
+
+        </div>
+
+    </div>
+
+    <div class=" md:w-[40%] my-8">
+        <img src="./assets/main-hero.png" alt="" class="w-100 h-100">
+    </div>
+
+
+</div>
+
+    <!-- Hero-end -->
+
+  <!-- Company section start -->
+
+    <div class="block md:flex justify-evenly md:justify-center items-center mb-8">
+      <div class="block w-[100%] md:w-[85%]  md:flex  justify-evenly md:justify-center items-center gap-14 md:gap-14 lg:gap-20 bg-black text-white text-center py-6 md:py-7 lg:py-7 rounded-2xl text-[10px] md:text-[20px]  lg:text-[2vw] border border-blue md:px-2">
+
+        <i class="bi bi-spotify mx-2 ">
+          <span class="ml-0.5 lg:ml-1 non-italic">
+        Spotify
+        </span>
+        </i>
+
+        <i class="bi bi-facebook  mx-2">
+          <span class="ml-0.5 lg:ml-1">
+            Facebook
+          </span>
+        </i>
+
+        <i class="bi bi-twitter-x mx-2">
+          <span class="ml-0.5 lg:ml-1">
+            Twitter
+          </span>
+        </i>
+        <i class="bi bi-meta mx-2">
+          <span class="ml-0.5 lg:ml-1">
+            Meta
+          </span>
+        </i>
+        <i class="bi bi-instagram mx-2">
+          <span class="ml-0.5 lg:ml-1">
+            Instagram
+          </span>
+        </i>
+         
+      </div>
+    </div>
+
+  <!-- Company section end -->
+
+
+  <!-- Discover section -->
+
+  <div class="block md:flex justify-center items-center " id="discover">
+    <div class=" text-center w-[100%] md:w-[65%]">
+      <h1 class="text-[22px] md:text-[4vw] lg:text-[4vw] leading-[4vh] md:leading-[5vw] lg:leading-[10vh] font-bold my-2 md:my-4 lg:mb-6 mx-0 md:mx-4 lg:mx-0">Discover Our Comprehensive Suite of Features</h1>
+      <p class=" text-sm md:text-lg font-normal text-slate-500 px-2 pb-2">Our platform is designed to empower your business with a comprehensive suite of features that streamline your marketing efforts and supercharge your growth.</p>
+    </div>
+  </div>
+   <!-- Discover section -->
+
+
+   <!-- Insights section start -->
+   <div class="w-100% block md:flex justify-center items-center bg-white md:px-8 py-8" >
+    <div class="block md:flex justify-center items-center bg-[#fbf9f5] px-10 py-10 w-[100%] md:w-[85%] rounded-[80px]">
+      <div class="w-[100%] md:w-[60%]">
+        <h1 class="text-[22px] md:text-[4vw] lg:text-[4vw] leading-[4vh] md:leading-[5vw] lg:leading-[10vh] font-bold my-2 md:my-4 lg:mb-6 mx-0 md:mx-4 lg:mx-0 px-2">
+          Harness Insights for Success
+        </h1>
+        <p class=" text-sm md:text-lg font-normal text-slate-500 px-2 pb-4 md:pb-2 ">
+          Uncover valuable insights and trends from your data with our advanced analytics tools. Make informed decisions, refine your strategies, and stay ahead of the competition by leveraging the wealth of information at your fingertips.
+        </p>
+      </div>
+
+      <div class="w-[100%] md:w-[40%] ">
+        <img src="./assets/insight-upscale.png" alt="insights" class="w-[100%] h-[100%] rounded-[50px] my-4 lg:my-0">
+      </div>
+    </div>
+   </div>
+
+   <!-- Insights section end -->
+
+   <!-- lead-campaign section start -->
+
+   <div class="w-100% block md:flex justify-center items-center bg-white">
+
+    <div class="w-100% md:w-[80%] block md:flex justify-between items-center bg-white">
+
+      <div class="w-[100%] md:w-[48%] mb-4 md:mb-0 bg-[#f6e6ff] rounded-[60px] lg:rounded-[80px] ">
+        <h1 class="text-[28px] md:text-[3vw] lg:text-[3vw] leading-[5vh] md:leading-[4vw] lg:leading-[8vh] font-bold  mx-8 lg:mx-12 mt:12 md:mt-9 mb-4 lg:mb-5 pt-6 md:pt-0">
+          Seamless Lead Generation
+        </h1>
+        <p class=" text-sm md:text-lg font-normal text-slate-500 mx-8 lg:mx-12 mt-4 mb-6">
+          Effortlessly gather and manage leads with our lead collection tools. From capturing potential customers information to nurturing relationships, our platform simplifies the lead generation process for maximized conversions.
+        </p>
+  
+        
+          <div class="flex justify-center">
+            <img src="./assets/lead-transformed.png" alt="lead" class="w-[85%] h-[100%] rounded-[50px] mx-0 md:mx-4 lg:mx-8 mb-4" >
+          </div>
+       
+      </div>
+
+      <!-- Right part start -->
+  
+      <div class="w-[100%] md:w-[48%] bg-[#e7f8ff] rounded-[60px] lg:rounded-[80px]">
+
+        <h1 class="text-[28px] md:text-[3vw] lg:text-[3vw] leading-[5vh] md:leading-[4vw] lg:leading-[8vh] font-bold  mx-8 lg:mx-12 mt-9 mb-4 lg:mb-5 pt-6 md:pt-0">
+          Targeted Campaign Excellence
+        </h1>
+        <p class=" text-sm md:text-lg font-normal text-slate-500 mx-8 lg:mx-12 mt-4 mb-6">
+          Amplify your brand's online presence through our robust digital marketing solutions. Reach your target audience across various channels, engage with compelling content, and drive meaningful interactions that convert casual visitors into loyal customers.
+        </p>
+  
+        
+          <div class="flex justify-center">
+            <img src="./assets/campaign_enhanced.png" alt="campaign" class="w-[85%] h-[100%] rounded-[50px] mx-0 md:mx-4 lg:mx-8 mb-4" >
+          </div>
+       
+      </div>
+
+      </div>
+      </div>
+
+      <!-- lead-campaign section start -->
+
+      <!-- Navigation success start -->
+      <div class=" bg-[#faeefc] mt-8">
+        <div class="block md:flex justify-center items-center  my-4">
+
+          <div class="w-[100%] md:w-[45%] flex justify-center">
+              <img src="./assets/nav1_enhanced.png" alt="success" class="w-[80%]">
+          </div>
+
+          <div class="w-[100%] md:w-[48%] ">
+            <h1 class="text-[28px] md:text-[3vw] lg:text-[3vw] leading-[5vh] md:leading-[4vw] lg:leading-[8vh] font-bold  mx-8 lg:mx-12 mt:4 md:mt-9 mb-4 lg:mb-5 pt-6 md:pt-0">
+              Navigating Success through Precision Ad Tracking
+            </h1>
+
+            <p class=" text-sm md:text-lg font-normal text-slate-500 mx-8 lg:mx-12 mt-4 mb-6">
+              We are your partners in optimizing advertising campaigns. Our meticulous ad tracking solutions provide real-time insights into your campaign performance, ensuring every click counts. With data-driven precision, we guide you towards
+              ROI driven decisions that elevate your brand's impact.
+            </p>
+
+            <button class="py-3 px-5  rounded-full border border-mycolor cursor-pointer flex items-center gap-1 mx-8 lg:mx-12 mt-4 mb-6">
+              <i class="bi bi-play text-xxl"></i>
+              Watch a demo</button>
+
+          </div>
+
+        </div>
+
+          <!-- Second part -->
+
+          <div class="block md:flex justify-center items-center md:flex-row-reverse">
+
+            <div class="w-[100%] md:w-[45%] flex justify-center">
+                <img src="./assets/nav2_enhanced.png" alt="success2" class="w-[80%]">
+            </div>
+  
+            <div class="w-[100%] md:w-[50%] pb-4">
+              <h1 class="text-[28px] md:text-[3vw] lg:text-[3vw] leading-[5vh] md:leading-[4vw] lg:leading-[8vh] font-bold  mx-8 lg:mx-12 mt:4 md:mt-9s  mb-4 lg:mb-5 pt-6 md:pt-0">
+                Unleashing Digital Potential with Strategic SEO
+              </h1>
+  
+              <p class=" text-sm md:text-lg font-normal text-slate-500 mx-8 lg:mx-12 mt-4 mb-6">
+                SEO is more than just keywords. Our dedicated team crafts holistic SEO strategies, propelling your website to the top ranks. From on-page perfection to off-site authority building, we drive organic growth that amplifies your online visibility and drives sustainable business growth.
+              </p>
+  
+              <button class="py-3 px-5  rounded-full border border-mycolor cursor-pointer flex items-center gap-1 mx-8 lg:mx-12 mt-4 mb-6">
+                <i class="bi bi-play text-xxl"></i>
+                Watch a demo</button>
+  
+            </div>
+  
+          </div>
+
+      </div>
+      <!-- navigation sucess end -->
+
+      <!-- Cards section start -->
+        <div class="bg-black text-white rounded-t-[25px] md:rounded-t-[50px] flex flex-col justify-center  border border-green-800 py-8" >
+
+          <div class="block md:flex justify-center items-center ">
+
+            <div class=" text-center w-[100%] md:w-[50%]">
+              <h1 class="text-[22px] md:text-[2vw] lg:text-[3vw] leading-[4vh] md:leading-[4vw] lg:leading-[8vh] font-bold my-2 md:my-4 lg:mb-6 mx-0 md:mx-4 lg:mx-0">You don't have to bother bringing in customers</h1>
+              <p class=" text-sm md:text-lg font-normal text-slate-500 px-2 pb-2">From multiple payment options to state-of-the-art encryption, trust us to handle your payments with the utmost care and efficiency.</p>
+            </div>
+          </div>
+
+         <div class="block md:flex w-[100%] justify-center items-center pt-4 pb-8" id="pricing">
+
+          <div class="w-[90%] md:w-[25%] bg-white text-black rounded-lg py-4 md:mx-4 my-4 mx-auto">
+              <p class="text-xl lg:text-2xl text-slate-600 px-4 ">Basic Plan</p>
+              <span class="text-[55px] lg:text-[80px] text-black font-extrabold pl-4 ">$12 </span> 
+              <span class="text:lg lg:text-xl text-slate-600">per month</span>
+              
+              <p class=" text-md lg:text-lg text-slate-600 px-4 py-2">Unlimited swipes and interactions.</p>
+              <button class="w-[90%] px-2 py-2 border border-black rounded-4xl ml-4 rounded-3xl my-4"><span class="text-md lg:text-lg">Get Started</span></button>
+
+              <hr class="mt-4">
+
+                <ul>
+                  <li class="text-lg lg:text-xl text-black font-bold px-4 py-2">Features</li>
+                  <li class="mb-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full "></i>
+                    <span class="px-4 ">Unlimited swipes and interactions </span>
+                  </li>
+                  <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                    <span  class="px-4">
+                      Ad-free experience 
+                    </span>           </li>
+                  <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                   <span class="px-4">
+                    Enhanced visibility in search results
+                   </span>
+                  </li>
+                  <li class="my-4 flex items-center px-4">
+                    <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                    <span class="px-4">
+                      Ad-free browsing experience
+                    </span>
+                  </li>
+                  <li class="my-4 flex items-center px-4">
+                    <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                    <span class="px-4">
+                      Advanced matching algorithm
+                    </span>
+                  </li>
+                  
+                </ul>
+               
+
+          </div>
+
+          <div class="w-[90%] md:w-[25%] bg-white text-black rounded-xl pb-4 md:mx-4 my-4 mx-auto">
+            <p class="text-center bg-gradient py-4 text-xl rounded-t-xl text-white">Most Popular &#128293; </p>
+            <p class="text-xl lg:text-2xl text-slate-600 px-4 pt-2">Basic Plan</p>
+            <span class="text-[55px] lg:text-[80px] text-mycolor font-extrabold pl-4">$40 </span> 
+            <span class="text:lg lg:text-xl text-slate-600">per month</span>
+            
+            <p class="text-md lg:text-lg text-slate-600 px-4 py-2">Unlimited swipes and interactions.</p>
+            <button class="w-[90%] px-2 py-2 border border-black rounded-4xl ml-4 rounded-3xl my-4"><span class="text-md lg:text-lg">Get Started</span></button>
+
+            <hr class="mt-4">
+
+              <ul>
+                <li class="text-xl text-black font-bold px-4 py-2">Features</li>
+                <li class="mb-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full "></i>
+                  <span class="px-4">Unlimited swipes and interactions </span>
+                </li>
+                <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                  <span  class="px-4">
+                    Ad-free experience 
+                  </span>           </li>
+                <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                 <span class="px-4">
+                  Enhanced visibility in search results
+                 </span>
+                </li>
+                <li class="my-4 flex items-center px-4">
+                  <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                  <span class="px-4">
+                    Ad-free browsing experience
+                  </span>
+                </li>
+                <li class="my-4 flex items-center px-4">
+                  <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                  <span class="px-4">
+                    Advanced matching algorithm
+                  </span>
+                </li>
+                
+              </ul>
+             
+
+        </div>
+
+        <div class=" w-[90%] md:w-[25%] bg-white text-black rounded-lg py-4 md:mx-4 my-4 mx-auto">
+          <p class="text-xl lg:text-2xl text-slate-600 px-4">Basic Plan</p>
+          <span class="text-[55px] lg:text-[80px] text-black font-extrabold pl-4 ">$60 </span> 
+          <span class="text:lg lg:text-xl text-slate-600">per month</span>
+          
+          <p class="text-md lg:text-lg text-slate-600 px-4 py-2">Unlimited swipes and interactions.</p>
+          <button class="w-[90%] px-2 py-2 border border-black rounded-4xl ml-4 rounded-3xl my-4"><span class="text-md lg:text-lg">Get Started</span></button>
+
+          <hr class="mt-4">
+
+            <ul>
+              <li class="text-xl text-black font-bold px-4 py-2">Features</li>
+              <li class="mb-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full "></i>
+                <span class="px-4">Unlimited swipes and interactions </span>
+              </li>
+              <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                <span  class="px-4">
+                  Ad-free experience 
+                </span>           </li>
+              <li class="my-4 flex items-center px-4"><i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+               <span class="px-4">
+                Enhanced visibility in search results
+               </span>
+              </li>
+              <li class="my-4 flex items-center px-4">
+                <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                <span class="px-4">
+                  Ad-free browsing experience
+                </span>
+              </li>
+              <li class="my-4 flex items-center px-4">
+                <i class="bi bi-check-lg bg-gradient px-2 py-1 rounded-full"></i>
+                <span class="px-4">
+                  Advanced matching algorithm
+                </span>
+              </li>
+              
+            </ul>
+           
+
+      </div>
+
+         </div>
+
+        
+
+        
+
+          </div>
+      <!-- Cards section end -->
+
+
+      <!-- Marketing and sales section start -->
+
+      <div class="md:flex justify-center items-center flex-wrap my-4 md:my-0 " id="growth">
+
+        <div class=" md:w-[40%] my-4 md:my-8 flex justify-center">
+          <img src="./assets/marketingsuccess_enhanced.png" alt="" class="w-[85%]">
+      </div> 
+
+        <div class=" md:w-[46%] px-4 md:px-8 pb-4">
+
+          <h1 class="text-[30px] md:text-[3vw] lg:text-[5vw] leading-[5vh] md:leading-[4vw] lg:leading-[10vh] font-bold  py-2 lg:py-6">
+            Ready to boost your marketing & sales?
+          </h1>
+
+          <p class=" text-sm md:text-lg font-normal text-slate-500 py-1 lg:py-4">
+            Dashboard platform that was created with the aim of making it easier for business people to manage sales data, sales statistics and sales reports.
+          </p>
+    
+            <div class="flex gap-4 my-4">
+                <button class="py-3 px-5 text-white rounded-full bg-gradient cursor-pointer ">Get Started</button>
+                <button class=" py-1 px-3 md:py-3 md:px-5  rounded-full border border-mycolor cursor-pointer flex items-center gap-1">
+                    <i class="bi bi-play text-md md:text-xxl"></i>
+                    Watch a demo</button>
+    
+            </div>
+    
+        </div>
+       
+    </div>
+      <!-- Marketing and sales section end -->
+
+
+      <!-- Footer section start -->
+      <div class="bg-black text-white block md:flex flex-col justify-center items-center py-4 rounded-t-[25px] md:rounded-t-[50px]" >
+
+        <div class="flex  flex-wrap w-[100%] justify-evenly py-2 md:py-8 ">
+
+          <div class=" w-[95%] md:w-[30%] flex  flex-col ">
+  
+            <div class="flex items-center gap-3 items-start mt-4 mb-4">
+              <img src="./assets/logo.png" alt="logo" class=" w-[10%]">
+            <span class=" text:lg md:text-2xl font-bold">MRKT.AI</span>
+  
+            </div>
+  
+            <div class="flex gap-10 md:gap-5 items-end  my-4">
+              <i class="bi bi-instagram px-2 py-1 md:px-3 md:py-2 rounded-full bg-gradient"></i>
+              <i class="bi bi-facebook px-2 py-1 md:px-3 md:py-2 rounded-full bg-gradient"></i>
+              <i class="bi bi-youtube px-2 py-1 md:px-3 md:py-2 rounded-full bg-gradient"></i>
+              <i class="bi bi-twitter-x px-2 py-1 md:px-3 md:py-2 rounded-full bg-gradient"></i>
+            </div>
+             
+          </div>
+  
+          <div class=" w-[30%] md:w-[15%] ">
+            <ul>
+              <li class="text-lg md:text-xl font-bold py-1 md:py-2">Solution</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Digital Marketing</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Social Media</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Ads</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">SEO</li>
+            </ul>
+          </div>
+  
+          <div class=" w-[30%] md:w-[15%] ">
+              <ul>
+              <li class="text-lg md:text-xl font-bold py-1 md:py-2">Resource</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">News & Media</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Culture</li>
+               <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Blog </li>
+             
+            </ul>
+          </div>
+  
+          <div class=" w-[30%] md:w-[15%]">
+              <ul>
+              <li class="text-lg md:text-xl font-bold py-1 md:py-2">Tools</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Pricing</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Compare Us</li>
+              <li class="pb-1 md:pb-2 text-slate-400 font-base text-xs md:text-lg">Support</li>
+            </ul>
+          </div>
+  
+  
+        </div>
+
+          <hr class=" w-[95%] md:w-[90%] mx-auto my-4">
+
+          <div class="block md:flex md:justify-between gap-4 w-[100%] md:w-[90%] my-4 items-center">
+            <div class="w-[100%] md:w-[30%] justify-between md:justify-start">
+              <p class="text-xs md:text-sm lg:text-lg text-center mb-2">@2024 . All rights reserved</p>
+            </div>
+
+            <div class="flex justify-center md:items-center w-[100%] md:w-[30%]  text-mycolor mb-3 ">
+              
+                
+                  <a href="https://www.linkedin.com/in/heydivyapawar/">
+                   <span class="text-[12px] md:text-[18px]">Developed by Divya Pawar</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+               
+            </div>
+
+            <div class="flex gap-5 w-[100%] md:w-[30%] justify-between md:justify-end items-center">
+                <span class="text-xs  md:text-sm lg:text-lg">Privacy Policy</span>
+                <span class="text-xs md:text-sm lg:text-lg">Terms of Service</span>
+                <span class="text-xs md:text-sm lg:text-lg">Disclosure</span>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Footer section end -->
+
+  </body>
+</html>
